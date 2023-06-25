@@ -13,35 +13,35 @@ import { myLoader } from "@/utils/all";
 export default function Navbar(props) {
   const leftmenu = [
     {
-      label: "Home",
+      label: "Inicio",
       href: "/"
     },
     {
-      label: "About",
-      href: "/about"
-    },
-    {
-      label: "Contact",
-      href: "/contact"
+      label: "Información",
+      href: "/informacion"
     }
   ];
 
   const rightmenu = [
     {
-      label: "Archive",
-      href: "/archive"
+      label: "Artículos",
+      href: "/articulos"
     },
     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
-    },
-    {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
+      label: "Contacto",
+      href: "/contacto"
     }
+    // {
+    //   label: "Pro Version",
+    //   href: "https://stablo-pro.web3templates.com/",
+    //   external: true,
+    //   badge: "new"
+    // },
+    // {
+    //   label: "Download",
+    //   href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
+    //   external: true
+    // }
   ];
 
   const mobilemenu = [...leftmenu, ...rightmenu];
@@ -85,9 +85,7 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center">
-                        Stablo
-                      </span>
+                      <span className="block text-center">CDME</span>
                     )}
                   </Link>
                   <Link href="/" className="hidden w-28 dark:block">
@@ -99,9 +97,7 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center">
-                        Stablo
-                      </span>
+                      <span className="block text-center">CDME</span>
                     )}
                   </Link>
                   <Disclosure.Button

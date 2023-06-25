@@ -11,14 +11,14 @@ export async function sharedMetaData(params) {
     title: {
       default:
         settings?.title ||
-        "Stablo - Blog Template for Next.js & Sanity CMS",
+        "Departamento de Química - Tecnológico de Celaya",
       template: "%s | Stablo"
     },
     description:
       settings?.description ||
-      "Stablo - popular open-source next.js and sanity blog template",
-    keywords: ["Next.js", "Sanity", "Tailwind CSS"],
-    authors: [{ name: "Surjith" }],
+      "Blog oficial del departamento de química del Instituto Tecnológico Nacional de México en Celaya (ITC)",
+    keywords: ["ITC", "Química", "Departamento de química", "blog"],
+    authors: [{ name: "Luis Leal | Alfredo Jimenez | Uriel Galindo | Luis Chaires" }],
     canonical: settings?.url,
     openGraph: {
       images: [
@@ -32,7 +32,7 @@ export async function sharedMetaData(params) {
       ]
     },
     twitter: {
-      title: settings?.title || "Stablo Template",
+      title: settings?.title || "Departamento de Química - Tecnológico de Celaya",
       card: "summary_large_image"
     },
     robots: {
