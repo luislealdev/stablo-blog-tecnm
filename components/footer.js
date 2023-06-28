@@ -6,8 +6,87 @@ import VercelLogo from "../public/img/vercel.svg";
 
 export default function Footer(props) {
   return (
-    <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
-      <div className="text-center text-sm">
+    <Container className=" border-t border-gray-100 dark:border-gray-800">
+      
+      <div className=" flex items-center logo-them-container gap-1">
+        <div className="mt-5 flex gap-5 w-280 flex-wrap justify-center" id="logo-container">
+          <Image
+            className="image"
+            src="/img/logos/LOGO-CDME_01.jpg"
+            alt="Centro de Desarrollo de Materiales Especiales"
+            unoptimized={true}
+            width="150"
+            height="25"
+          />
+          <Image
+            className="image"
+            src='/img/logos/LOGO-CDME_02.jpg'
+            alt="Compositos y nanocompositos poliméricos"
+            unoptimized={true}
+            width='150'
+            height='25'
+          />
+          <Image
+            className="image"
+            src='/img/logos/LOGO-CDME-03.jpg'
+            alt="Investigación e innovación en Diseño y Materiales"
+            unoptimized={true}
+            width='150'
+            height='25'
+          />
+          <Image
+            className="image"
+            src='/img/logos/LOGO-CDME-04.jpg'
+            alt="Catálisis Heterogénea"
+            unoptimized={true}
+            width='150'
+            height='25'
+          />
+          <Image
+            className="image"
+            src='/img/logos/LOGO-CDME-05.jpg'
+            alt="Nanomateriales y Bionanomateriales"
+            unoptimized={true}
+            width='150'
+            height='25'
+          />
+          <Image
+            className="image"
+            src='/img/logos/LOGO-CDME-06.jpg'
+            alt="Tribología y Análisis de Superficies en Materiales Avanzados"
+            unoptimized={true}
+            width='150'
+            height='25'
+          />
+          <Image
+            className="image"
+            src='/img/logos/LOGO-CDME-07.jpg'
+            alt="Fisicoquímica y Materiales Alternativos"
+            unoptimized={true}
+            width='150'
+            height='25'
+          />
+          <Image
+            className="image"
+            src='/img/logos/LOGO-CDME-08.jpg'
+            alt="Desarrollo Sustentable"
+            unoptimized={true}
+            width='150'
+            height='25'
+          />
+          <Image
+            className="image"
+            src='/img/logos/LOGO-CDME-09.jpg'
+            alt="Biopolímeros y Biotecnología"
+            unoptimized={true}
+            width='150'
+            height='25'
+          />
+        </div>
+        <ThemeSwitch/>
+      </div>
+
+      <div className=" mt-8 text-center text-sm">
         Copyright © {new Date().getFullYear()}{props?.copyright}. All
         rights reserved.
       </div>
@@ -37,18 +116,7 @@ export default function Footer(props) {
           </a>
         </span>
       </div>
-      <div className="mt-2 flex items-center justify-between">
-        <div className="mt-5">
-          <Image
-            src="/img/logos/LOGO-CDME_01.jpg"
-            alt="Centro de Desarrollo de Materiales Especiales"
-            unoptimized={true}
-            width="150"
-            height="25"
-          />
-        </div>
-        <ThemeSwitch />
-      </div>
+
       {/* <Backlink /> */}
     </Container>
   );

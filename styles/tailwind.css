@@ -7,3 +7,26 @@
 /*! purgecss end ignore */
 
 /*Custom Styles Here*/
+
+
+.logo-them-container{ 
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+/* Clase que contiene el cambio de tema y los logos */
+
+@media screen and (max-width: 690px) {
+    
+    #logo-container{
+        gap: 10px;
+    }
+
+    #logo-container .image{
+        width: 123.5px;
+        height: 70px;
+    }
+
+  }
+
+/* media query que modifica tamaño de logos */
